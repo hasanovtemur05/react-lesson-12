@@ -20,8 +20,8 @@ const handleSubmit = (e) =>{
   e.preventDefault()
   console.log(form);
   if (form.username === "admin") {
-    // navigate("/admin-layout")
-    Notification({title: "succes", type: "success"})
+    navigate("/admin-layout")
+    // Notification({title: "succes", type: "success"})
   }else if (form.username === "student") {
     navigate("/student-layout")
   }else{
